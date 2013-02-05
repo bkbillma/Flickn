@@ -1,0 +1,65 @@
+@import '_bits';
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body {
+	font-size: 1em;
+	font-weight: bold;
+	font-family: 'Myriad Pro', Arial, 'Sans serif';
+	color: $green;
+	background: url(../images/background.png);
+}
+
+section {
+	width: 96%;
+	margin: 20px 0;
+	position:relative;
+	left: 2%;
+	text-align: center;
+}
+
+button {
+	font-size: 1.2em;
+	font-weight:bold;
+	margin: 0;
+	border: none;
+	color: $grey;
+	padding: $space ($space*2);
+	cursor: pointer;
+}
+
+img {
+	width: 100%;
+	border: none;
+	box-shadow: 0 0 6px $green;
+}
+
+@media (min-width: 600px) {
+	section {
+		width: 90%;
+		left: 5%;
+	}
+	button {
+		margin: 0 $space;
+	}
+}
+
+@media (min-width: 1000px) {
+	section {
+		width: 60%;
+		left: 20%;
+	}
+	button {
+		margin: 0 ($space*4);
+	}
+}
+
+@media (min-width: 1400px) {
+	section {
+		width: 50%;
+		left: 25%;
+	}
+}
